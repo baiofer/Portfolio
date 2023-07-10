@@ -1,0 +1,33 @@
+.banner {
+    height: 75vh;
+    position: relative;
+}
+
+.banner .banner__image {
+    background-image: url(../assets/IMG_2812.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+}
+
+
+
+
+@media (470px <= width) {
+    .banner {
+        height: 70vh;
+    }
+
+    .banner .banner__image {
+        background-image: url(../assets/IMG_2811.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

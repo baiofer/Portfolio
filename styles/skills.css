@@ -9,6 +9,7 @@
     text-align: justify;
     font-size: 0.9em;
     line-height: 1.4em;
+    max-width: 1200px;
 }
 
 /* Progress bars */

@@ -1,0 +1,61 @@
+#toSkills {
+    scroll-margin-top: 110px;
+}
+
+.skills {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: justify;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+/* Progress bars */
+/* Patience */
+.skills__container__patience {
+    margin: 20px;
+    height: 18px;
+    width: 70%;
+    border: 1px solid black;
+}
+
+@keyframes skills__patience {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+.skills__patience {
+    margin: 2px;
+    height: 10px;
+    background-color: red;
+    animation: skills__patience 5s linear;
+}
+
+/* Construction */
+.skills__container__construction {
+    margin: 20px;
+    height: 18px;
+    width: 70%;
+    border: 1px solid black;
+}
+
+@keyframes skills__construction {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.skills__construction {
+    margin: 2px;
+    height: 10px;
+    background-color: red;
+    animation: skills__construction 5s linear;
+}

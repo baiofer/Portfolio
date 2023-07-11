@@ -1,0 +1,11 @@
+#toInfo {
+    scroll-margin-top: 110px;
+}
+
+.info {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}

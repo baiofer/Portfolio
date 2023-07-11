@@ -1,5 +1,5 @@
 #toSkills {
-    scroll-margin-top: 110px;
+    scroll-margin-top: 150px;
 }
 
 .skills {
@@ -14,10 +14,10 @@
 
 /* Progress bars */
 /* Patience */
-.skills__container__patience {
-    margin: 20px;
+.skills .skills__container__patience {
+    margin: 0 auto;
     height: 18px;
-    width: 70%;
+    width: 90%;
     border: 1px solid black;
 }
 
@@ -26,22 +26,23 @@
         width: 0;
     }
     100% {
-        width: 95%;
+        width: 80%;
     }
 }
 
-.skills__patience {
+.skills .skills__container__patience .skills__patience {
     margin: 2px;
     height: 10px;
+    width: 80%;
     background-color: red;
     animation: skills__patience 5s linear;
 }
 
 /* Construction */
 .skills__container__construction {
-    margin: 20px;
+    margin: 0 auto;
     height: 18px;
-    width: 70%;
+    width: 90%;
     border: 1px solid black;
 }
 
@@ -50,13 +51,139 @@
         width: 0;
     }
     100% {
-        width: 75%;
+        width: 65%;
     }
 }
 
 .skills__construction {
     margin: 2px;
     height: 10px;
+    width: 65%;
     background-color: red;
     animation: skills__construction 5s linear;
+}
+
+/* Carpinteria */
+.skills__container__woodwork {
+    margin: 0 auto;
+    height: 18px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+@keyframes skills__woodwork {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+.skills__woodwork {
+    margin: 2px;
+    height: 10px;
+    width: 40%;
+    background-color: red;
+    animation: skills__woodwork 5s linear;
+}
+
+/* Pintura */
+.skills__container__paint {
+    margin: 0 auto;
+    height: 18px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+@keyframes skills__paint {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 35%;
+    }
+}
+
+.skills__paint {
+    margin: 2px;
+    height: 10px;
+    width: 35%;
+    background-color: red;
+    animation: skills__paint 5s linear;
+}
+
+/* Investigación */
+.skills__container__research {
+    margin: 0 auto;
+    height: 18px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+@keyframes skills__research {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.skills__research {
+    margin: 2px;
+    height: 10px;
+    width: 85%;
+    background-color: red;
+    animation: skills__research 5s linear;
+}
+
+/* Resolucion de problemas */
+.skills__container__solve {
+    margin: 0 auto;
+    height: 18px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+@keyframes skills__solve {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.skills__solve {
+    margin: 2px;
+    height: 10px;
+    width: 80%;
+    background-color: red;
+    animation: skills__solve 5s linear;
+}
+
+/* Creatividad */
+.skills__container__creativity {
+    margin: 0 auto;
+    height: 18px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+@keyframes skills__creativity {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+.skills__creativity {
+    margin: 2px;
+    height: 10px;
+    width: 20%;
+    background-color: red;
+    animation: skills__creativity 5s linear;
 }

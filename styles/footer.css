@@ -1,15 +1,20 @@
 .footer {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    background-color: gainsboro;
     border-top: 2px double white;
+    padding: 10px;
+    
+    
 }
 
-.footer__link__image {
-    width: 50px;
-    height: 50px;
+.footer .footer__container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    width: 90%;
+    margin: 0 auto;  
+}
 
+.footer .footer__container .footer__link__image {
+    width: 40px;
+    height: 40px;
 }

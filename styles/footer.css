@@ -3,7 +3,6 @@
     border-top: 2px double white;
     padding: 10px;
     
-    
 }
 
 .footer .footer__container {
@@ -17,4 +16,105 @@
 .footer .footer__container .footer__link__image {
     width: 40px;
     height: 40px;
+}
+
+/* Creo el modal de whatsapp. Le pongo el top en -100vW para que no se vea. Cuando lo active, le pondré el top a cero para que se vea (lo escondo detras) */
+#footer__modal__whats {
+    background-color: rgb(195, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    position: fixed;
+    top: -100vw;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+#footer__modal_whats p {
+    width: 80%;
+    height: 50%;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Activo el modal por medio de un input tipo radio, que se activa y desactiva por click */
+#footer__mostrar__modal__whats {
+    display: none;
+}
+
+#footer__mostrar__modal__whats + #label__open__modal {
+    width: 40px;
+    height: 40px;
+    display: table;
+    margin: auto;
+    line-height: 3;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#footer__mostrar__modal__whats + label:hover {
+    opacity: 0.5;;
+}
+
+/* Saco el modal cuando el radio esté activado (checked) */
+#footer__mostrar__modal__whats[type=radio]:checked ~ #footer__modal__whats {
+    top: 0;
+}
+
+/* Añado el botón de cierre del modal */
+#footer__cerrar__modal__whats {
+    display: none;
+}
+
+#footer__cerrar__modal__whats + label {
+    position: fixed;
+    top: 9em;
+    right: 3em;
+    z-index: 200;
+    /* Icono del cierre */
+    color: white;
+    font-weight: bold;
+    background: tomato;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+/* Pongo y quito el icono de cierre con el modal */
+#footer__cerrar__modal__whats + label {
+    display: none;
+}
+#footer__mostrar__modal__whats[type=radio]:checked ~ #footer__cerrar__modal__whats + label {
+    display: block;
+    animation-delay: 1s;
+    animation: close-in 1s linear;
+}
+#footer__cerrar__modal__whats[type=checked]:checked + label {
+    display: none;
+}
+
+@keyframes close-in {
+    0% {
+        /* Icono del cierre */
+        color: rgb(195, 170, 170);
+        background: rgb(195, 170, 170);
+    }
+    100% {
+        /* Icono del cierre */
+        color: white;
+        font-weight: bold;
+        background: tomato;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+    }
 }

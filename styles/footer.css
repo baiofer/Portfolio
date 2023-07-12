@@ -1,8 +1,10 @@
 .footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 9999;
     background-color: gainsboro;
     border-top: 2px double white;
     padding: 10px;
-    
 }
 
 .footer .footer__container {

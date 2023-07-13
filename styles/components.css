@@ -1,9 +1,10 @@
+/* Botón tipo "submit" */
 .btn {
-    color: white;
+    color: var(--button-text-color);
     background-color: var(--button-bg-color);
     padding: 10px;
     border-radius: 5px;
-    border: 2px solid blue;
+    border: 2px solid var(--button-bg-color);
     transition: background-color 0.3s linear;
 }
 
@@ -13,12 +14,14 @@
     }
 }
 
+/* Botón tipo "reset" */
 .btn.btn--secondary {
     background-color: transparent;
-    border-color: blue;
-    color: blue;
+    border-color: var(--button-bg-color);
+    color: var(--button-bg-color);
 }
 
+/* Entrada */
 .contact__form__element {
     display: flex;
     flex-direction: column;
@@ -34,26 +37,47 @@
 .contact__form__input {
     padding: 16px 12px;
     border-radius: 5px;
-    background-color: #e5efeee8;
+    background-color: var(--label-bg-color);
     border: none;
-    color: rgb(255, 255, 255);
+    color: var(--main-text-color);
 }
 
+/* Area de radio buttons*/
+fieldset {
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.contact__form__element--radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact__form__element--radio input, .contact__form__element--radio label {
+    margin-left: 10px;
+}
+
+#university, #university__label {
+    margin-top: 10px;
+}
+
+/* Area de checkbox */
 .contact__form__element--checkbox {
     flex-direction: row;
     align-items: center;
 }
 
 .contact__form__element--checkbox input[type="checkbox"] {
+    margin-top: -12px;
     margin-right: 10px;
 }
 
-input::placeholder, textarea::placeholder {
-    color: #cbcbcb;
+/* Area de texto */
+textarea {
+    border-radius: 5px;
 }
 
-@media screen and (min-width: 768px) {
-    .hidden-xs {
-        display: block;
-    }
+input::placeholder, textarea::placeholder {
+    color: var(--input-ph-color);
 }

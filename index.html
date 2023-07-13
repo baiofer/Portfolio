@@ -59,7 +59,7 @@
                     </p>
                 </div>
                 <div class="info__image">
-                    <img src="assets/info/modelismo.jpeg" alt="Foto info">
+                    <img src="assets/info/modelismo.png" alt="Foto info">
                 </div>
             </div>
         </section>
@@ -135,6 +135,7 @@
         <section id="toContact" class="contact">
             <h2>Contacto</h2>
             <form class="contact__form" action="registro.html" method="post">
+                <div class="form__grid">
                 <div class="contact__form__element">
                     <label class="contact__form__label" for="name">Nombre</label>
                     <input 
@@ -144,7 +145,6 @@
                         placeholder="¿Cuál es tu nombre?"
                         name="name"
                         required
-                        value="Fernando"
                     >
                 </div>
                 <div class="contact__form__element">
@@ -156,7 +156,6 @@
                         placeholder="¿Y tus apellidos?"
                         name="surname"
                         required
-                        value="Jarilla"
                     >
                 </div>
                 <div class="contact__form__element">
@@ -170,7 +169,6 @@
                         title="El formato es 999 999 999"
                         pattern="[0-9]{3} [0-9]{3} [0-9]{3}"
                         required
-                        value="669 554 008"
                     >
                 </div>
                 <div class="contact__form__element">
@@ -185,40 +183,49 @@
                         pattern="@[^\s]+"
                     >
                 </div>
+                </div>
                 <fieldset class="contact__form__element">
                     <legend>¿Cómo me conociste?</legend>
-                    <input 
-                        id="university"
-                        class="contact__form__input"
-                        type="radio" 
-                        name="meetMe"
-                        value="university"
-                    >
-                    <label class="contat__form__label" for="university">En la Universidad</label>
-                    <input 
-                        id="kick-off"
-                        class="contact__form__input"
-                        type="radio" 
-                        name="meetMe"
-                        value="keepcoding-kick-off"
-                    >
-                    <label class="contat__form__label" for="kick-off">En un kick-off de Keepcoding</label>
-                    <input 
-                        id="school"
-                        class="contact__form__input"
-                        type="radio" 
-                        name="meetMe"
-                        value="school"
-                    >
-                    <label class="contat__form__label" for="school">En la escuela</label>
-                    <input 
-                        id="github"
-                        class="contact__form__input"
-                        type="radio" 
-                        name="meetMe"
-                        value="github"
-                    >
-                    <label class="contat__form__label" for="github">A través de Github</label>
+                    <div class="contact__form__element contact__form__element--radio"> 
+                        <input 
+                            id="university"
+                            class="contact__form__input"
+                            type="radio" 
+                            name="meetMe"
+                            value="university"
+                        >
+                        <label class="contat__form__label" for="university" id="university__label">En la Universidad</label>
+                    </div>
+                    <div class="contact__form__element contact__form__element--radio">
+                        <input 
+                            id="kick-off"
+                            class="contact__form__input"
+                            type="radio" 
+                            name="meetMe"
+                            value="keepcoding-kick-off"
+                        >
+                        <label class="contat__form__label" for="kick-off">En un kick-off de Keepcoding</label>
+                    </div>
+                    <div class="contact__form__element contact__form__element--radio">
+                        <input 
+                            id="school"
+                            class="contact__form__input"
+                            type="radio" 
+                            name="meetMe"
+                            value="school"
+                        >
+                        <label class="contat__form__label" for="school">En la escuela</label>
+                    </div>
+                    <div class="contact__form__element contact__form__element--radio">
+                        <input 
+                            id="github"
+                            class="contact__form__input"
+                            type="radio" 
+                            name="meetMe"
+                            value="github"
+                        >
+                        <label class="contat__form__label" for="github">A través de Github</label>
+                    </div>
                 </fieldset>
                 <div class="contact__form__element">
                     <label class="contact__form__label" for="more">Mas información</label>
@@ -232,15 +239,13 @@
                     ></textarea>
                 </div>
                 <div class="contact__form__element contact__form__element--checkbox">
-                    <label class="contact__form__label" for="newsletter">Quiero acceso a la newsletter</label>
                     <input 
                         id="newsletter"
                         class="contact__form__input"
                         type="checkbox"
                         name="newsletter"
-                        checked
                     >
-                   
+                    <label class="contact__form__label" for="newsletter">Quiero acceso a la newsletter</label>
                 </div>
                 <div>
                     <button 

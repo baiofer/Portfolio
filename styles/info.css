@@ -1,5 +1,5 @@
 #toInfo {
-    scroll-margin-top: 10%;
+    scroll-margin-top: 200%;
 }
 
 .info {
@@ -21,10 +21,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-.info .info__container .info__image img{
-    object-fit: contain; 
 }
 
 @media (min-width: 700px) {

@@ -8,7 +8,7 @@
 
 /* icon menu style */
 .material-symbols-outlined {
-    color: blue;
+    color: var(--header-text-color);
     font-size: 30px;
     justify-content: flex-end;
 }
@@ -18,7 +18,7 @@
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color: #dcdcdc;
+    background-color: var(--header-bg-color);
     display: flex;
     justify-content: space-between;
     padding: 10px 70px 10px 50px;
@@ -42,14 +42,14 @@ li a {
     display: block;
     text-align: left;
     font-size: 0.9em;    
-    color: blue;
+    color: var(--header-text-color);
     text-decoration: none;
     transition:all 0.5s ease;
 }
 
 /* estados hover de los link */
 li:hover a {
-    color: #19c589;
+    color: var(--header-text-color-light);
 }
 
 /* Estilo de .muestra-menu */
@@ -62,12 +62,12 @@ li:hover a {
 
 
 /*Oculta el checkbox*/
-input[type=checkbox]{
+#show-menu{
     display: none;
 }
 
 /* muestra el menu cuando el checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
+#show-menu:checked ~ #menu{
     display: block;
 }
 

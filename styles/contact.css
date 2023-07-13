@@ -9,3 +9,15 @@
     max-width: 1200px;
     margin-bottom: 60px;
 }
+
+.form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .form__grid {
+        grid-template-columns: 1fr;
+    }
+}

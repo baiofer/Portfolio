@@ -1,0 +1,11 @@
+#toContact {
+    scroll-margin-top: 150px;
+}
+
+.contact {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 1200px;
+    margin-bottom: 60px;
+}

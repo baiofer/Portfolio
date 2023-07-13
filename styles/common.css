@@ -1,7 +1,19 @@
 :root {
-    --main-text-color: rgba(0, 0, 0, 1);
-    --main-bg-color: #fff;
+    /* Colores */
+    --main-bg-color: #f4f4f4;
+    --header-bg-color: #dcdcdc;
+    --button-bg-color: #212dd6;
+    --button-bg-color-light: ;
+    --label-bg-color: #fff;
+    --main-text-color: #281d5e;
+    --header-text-color: #212dd6;
+    --header-text-color-light: ;
+    --button-text-color: #f4f4f4;
+    --input-text-color: #281d5e;
+    --input-ph-color: #dcdcdc;
+    /* Tamaño base de fuente */
     font-size: 16px;
+    /* Fuente */
     font-family: sans-serif;
 }
 

@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/project-resume.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -26,14 +28,9 @@
         <input type="checkbox" id="show-menu" role="button">
         <ul id="menu">
             <li><a href="#toInfo">Sobre mi</a></li>
-            <li>
-                <a href="#toSkills">Skills</a>
-            </li>
-            <li>
-                <a href="#toProjects">Proyectos</a>
-            </li>
-            <li><a href="#toContactForm">Contacto</a></li>
-            <li><a href="#toFooter">Mis redes sociales</a></li>
+            <li><a href="#toSkills">Skills</a></li>
+            <li><a href="#toProjects">Proyectos</a></li>
+            <li><a href="#toContact">Contacto</a></li>
         </ul>
     </header>
     <main>
@@ -45,7 +42,7 @@
             </div>
         </section>
         <section id="toInfo" class="info">
-            <h1>Sobre mi</h1>
+            <h2>Sobre mi</h2>
             <div class="info__container">
                 <div class="info__text">
                     <p>
@@ -135,8 +132,129 @@
                 <div class="skills__creativity skill"></div>
             </div>
         </section>
-        <section id="to" class="projects">
-            <a href=""></a>
+        <section id="toContact" class="contact">
+            <h2>Contacto</h2>
+            <form class="contact__form" action="registro.html" method="post">
+                <div class="contact__form__element">
+                    <label class="contact__form__label" for="name">Nombre</label>
+                    <input 
+                        id="name"
+                        class="contact__form__input"
+                        type="text"
+                        placeholder="¿Cuál es tu nombre?"
+                        name="name"
+                        required
+                        value="Fernando"
+                    >
+                </div>
+                <div class="contact__form__element">
+                    <label class="contact__form__label" for="surname">Apellidos</label>
+                    <input 
+                        id="surname"
+                        class="contact__form__input"
+                        type="text"
+                        placeholder="¿Y tus apellidos?"
+                        name="surname"
+                        required
+                        value="Jarilla"
+                    >
+                </div>
+                <div class="contact__form__element">
+                    <label class="contact__form__label" for="phone">Teléfono</label>
+                    <input 
+                        id="phone"
+                        class="contact__form__input"
+                        type="phone"
+                        placeholder="¿Tu teléfono? (En este formato999 999 999)"
+                        name="phone"
+                        title="El formato es 999 999 999"
+                        pattern="[0-9]{3} [0-9]{3} [0-9]{3}"
+                        required
+                        value="669 554 008"
+                    >
+                </div>
+                <div class="contact__form__element">
+                    <label class="contact__form__label" for="github">Usuario de github</label>
+                    <input 
+                        id="github"
+                        class="contact__form__input"
+                        type="text"
+                        placeholder="¿Tu usuario de github? (En este formato: @usuario)"
+                        name="github"
+                        title="El formato @usuario"
+                        pattern="@[^\s]+"
+                    >
+                </div>
+                <fieldset class="contact__form__element">
+                    <legend>¿Cómo me conociste?</legend>
+                    <input 
+                        id="university"
+                        class="contact__form__input"
+                        type="radio" 
+                        name="meetMe"
+                        value="university"
+                    >
+                    <label class="contat__form__label" for="university">En la Universidad</label>
+                    <input 
+                        id="kick-off"
+                        class="contact__form__input"
+                        type="radio" 
+                        name="meetMe"
+                        value="keepcoding-kick-off"
+                    >
+                    <label class="contat__form__label" for="kick-off">En un kick-off de Keepcoding</label>
+                    <input 
+                        id="school"
+                        class="contact__form__input"
+                        type="radio" 
+                        name="meetMe"
+                        value="school"
+                    >
+                    <label class="contat__form__label" for="school">En la escuela</label>
+                    <input 
+                        id="github"
+                        class="contact__form__input"
+                        type="radio" 
+                        name="meetMe"
+                        value="github"
+                    >
+                    <label class="contat__form__label" for="github">A través de Github</label>
+                </fieldset>
+                <div class="contact__form__element">
+                    <label class="contact__form__label" for="more">Mas información</label>
+                    <textarea 
+                        id="more"
+                        class="contact__form_input"
+                        name="more" 
+                        maxlength="180"
+                        placeholder="¿Qué mas quieres saber?"
+                        required
+                    ></textarea>
+                </div>
+                <div class="contact__form__element contact__form__element--checkbox">
+                    <label class="contact__form__label" for="newsletter">Quiero acceso a la newsletter</label>
+                    <input 
+                        id="newsletter"
+                        class="contact__form__input"
+                        type="checkbox"
+                        name="newsletter"
+                        checked
+                    >
+                   
+                </div>
+                <div>
+                    <button 
+                        class="btn btn--secondary"
+                        type="reset"
+                    >Reset</button>
+                    <input 
+                        class="btn"
+                        type="submit" 
+                        id="" 
+                        value="Enviar"
+                    >
+                </div>
+            </form>
         </section>
     </main>
     <footer id="toFooter" class="footer">

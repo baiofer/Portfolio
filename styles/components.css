@@ -1,0 +1,59 @@
+.btn {
+    color: white;
+    background-color: var(--button-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid blue;
+    transition: background-color 0.3s linear;
+}
+
+@media (hover: hover) {
+    .btn:hover {
+        background-color: var(--button-bg-color-light);
+    }
+}
+
+.btn.btn--secondary {
+    background-color: transparent;
+    border-color: blue;
+    color: blue;
+}
+
+.contact__form__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.contact__form__label {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.contact__form__input {
+    padding: 16px 12px;
+    border-radius: 5px;
+    background-color: #e5efeee8;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.contact__form__element--checkbox {
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact__form__element--checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #cbcbcb;
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-xs {
+        display: block;
+    }
+}

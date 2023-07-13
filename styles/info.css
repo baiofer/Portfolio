@@ -1,10 +1,11 @@
 #toInfo {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 10%;
 }
 
 .info {
     width: 90%;
     margin: 0 auto;
+    margin-top: 100px;
     overflow: hidden;
     max-width: 1200px;
 }

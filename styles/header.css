@@ -18,7 +18,7 @@
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color: gainsboro;
+    background-color: #dcdcdc;
     display: flex;
     justify-content: space-between;
     padding: 10px 70px 10px 50px;

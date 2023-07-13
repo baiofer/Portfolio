@@ -1,8 +1,8 @@
 .footer {
     position: sticky;
     bottom: 0;
-    z-index: 9999;
-    background-color: gainsboro;
+    z-index: 9000;
+    background-color: var(--header-bg-color);
     border-top: 2px double white;
     padding: 10px;
 }
@@ -22,11 +22,11 @@
 
 /* Creo el modal de whatsapp. Le pongo el top en -100vW para que no se vea. Cuando lo active, le pondré el top a cero para que se vea (lo escondo detras) */
 #footer__modal__whats {
-    background-color: rgb(195, 170, 170);
+    background-color: var(--header-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: blue;
+    
     position: fixed;
     top: -200vw;
     left: 0;
@@ -36,12 +36,18 @@
     z-index: 10;
 }
 
-#footer__modal_whats p {
+.footer__link:hover {
+    opacity: 0.5;
+}
+
+/* Estilo el texto del modal */
+#footer__modal__whats p{
     width: 80%;
-    height: 50%;
+    margin: 0 auto;
     font-size: 1.5em;
     text-align: center;
     margin-top: 100px;
+    color: var(--main-text-color);
 }
 
 /* Activo el modal por medio de un input tipo radio, que se activa y desactiva por click */
@@ -58,8 +64,9 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+
 #footer__mostrar__modal__whats + label:hover {
-    opacity: 0.5;;
+    opacity: 0.5;
 }
 
 /* Saco el modal cuando el radio esté activado (checked) */
@@ -78,9 +85,9 @@
     right: 3em;
     z-index: 200;
     /* Icono del cierre */
-    color: white;
+    color: var(--button-text-color);
     font-weight: bold;
-    background: tomato;
+    background: var(--close-modal-color);
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -105,14 +112,14 @@
 @keyframes close-in {
     0% {
         /* Icono del cierre */
-        color: rgb(195, 170, 170);
-        background: rgb(195, 170, 170);
+        color: var(--close-modal-color);
+        background: var(--close-modal-color);
     }
     100% {
         /* Icono del cierre */
-        color: white;
+        color: var(--button-text-color);
         font-weight: bold;
-        background: tomato;
+        background: var(--close-modal-color);
         width: 25px;
         height: 25px;
         line-height: 25px;

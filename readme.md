@@ -8,13 +8,13 @@ Este proyecto desarrolla una de mis aficiones, que es el modelismo naval. Cubrie
 
 La estructura del proyecto ha quedado:
 
-- assets      
+- assets
     - banner
     - footer
     - info
     - navbar
     - pagina404-500
-    - projects        
+    - projects
         - mississippi
         - mistral
         - san idelfonso
@@ -24,7 +24,7 @@ La estructura del proyecto ha quedado:
         - sovereing
         - videos
         - viking
-- projects    
+- projects
     - idelfonso.html
     - martin.html
     - mississippi.html
@@ -33,7 +33,7 @@ La estructura del proyecto ha quedado:
     - soleil.html
     - sovereing.html
     - viking.html
-- styles      
+- styles
     - 404.css
     - 500.css
     - banner.css
@@ -55,6 +55,6 @@ La estructura del proyecto ha quedado:
 
 Se crea, para cada parte o sección de la página, el css correspondiente.
 
-El proyecto está subido a Github  [repo-en-Github]https://github.com/baiofer/Portfolio
+El proyecto está subido a Github  [repo-en-Github](https://github.com/baiofer/Portfolio)
 
 La página esta publicada en Github, a través de Pages, y está en la dirección: [Portfolio-Fernando](https://baiofer.github.io/Portfolio/)

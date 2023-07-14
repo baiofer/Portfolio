@@ -24,21 +24,21 @@
     padding: 10px 70px 10px 50px;
 }
 
-ul {
+#menu {
     list-style-type: none;
     margin-top: 50px;
     margin-right: -40px;
 }
 
 /*Crea la lista horizontal con espacio*/
-li {
+.menu-item {
     display: inline-block;
     float: left;
     margin-right: 20px;
 }
 
 /* Estilos para los link */
-li a {
+.menu-item a {
     display: block;
     text-align: left;
     font-size: 0.9em;    
@@ -48,7 +48,7 @@ li a {
 }
 
 /* estados hover de los link */
-li:hover a {
+.menu-item:hover a {
     color: var(--header-text-color-light);
 }
 
@@ -75,17 +75,17 @@ li:hover a {
 /* estilos responsive */
 
 @media screen and (max-width : 700px){
-    ul {
+    #menu {
         position: static;
         display: none;
         margin-top: 0;
     }
     /*Crea espacio vertical */
-    li {
+    .menu-item {
         margin-bottom: 1px;
     }
     /* crea todo el menu links  ancho full */
-    ul li, li a {
+    #menu .menu-item, .menu-item a {
         margin-top: 5px;
         width: 100%;
     }

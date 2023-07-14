@@ -3,83 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/projects.css">
     <title>Proyectos</title>
 </head>
-<body>
-    <section class="projects">
+<body class="main-bg">
+    <header class="header">
+        <div class="avatar">
+            <img src="assets/navbar/fotoFernando.png" alt="Mi avatar">
+        </div>
+        <a class="header__back" href="index.html">Volver</a>
+    </header>
+    <main class="projects">
         <div class="projects__video">
-
+            <video src="assets/projects/videos/IMG_2820.MOV" autoplay loop muted poster="assets/banner/IMG_2811.jpg">
+                <source src="assets/projects/videos/IMG_2820.MOV" type="video/webm">
+            </video> 
         </div>
         <div class="projects__text">
             <h2>Mis proyectos</h2>
             <p>Aqui os muestro una selección de los proyectos que he realizado y tengo en marcha. Espero que os gusten!.</p>
         </div>
         <ul class="projects__content">
-            <li>
+            <li class="projects__item">
                 <a href="">
                     <figure>
-                        <img src="" alt="">
+                        <img src="assets/projects/mississipi/IMG_2830.jpeg" alt="Imagen del King of the Mississippi">
                         <figcaption>King of the Mississippi</figcaption>
                     </figure>
                 </a>
             </li>
-            <li>
+            <li class="projects__item">
                 <a href="">
                     <figure>
-                        <img src="" alt="">
+                        <img src="assets/projects/viking/IMG_2843.jpeg" alt="Imagen de barco vikingo">
                         <figcaption>Barco vikingo</figcaption>
                     </figure>
                 </a>
             </li>
-            <li>
+            <li class="projects__item">
                 <a href="">
                     <figure>
-                        <img src="" alt="">
-                        <figcaption>Sección del Soleil Royal</figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>Goleta Mistral</figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <figure>
-                        <img src="" alt="">
+                        <img src="assets/projects/soleil/IMG_2060.jpg" alt="Imagen del Soleil Royal">
                         <figcaption>Soleil Royal</figcaption>
-                    </figure>
+                     </figure>
                 </a>
             </li>
-            <li>
+            <li class="projects__item">
                 <a href="">
                     <figure>
-                        <img src="" alt="">
-                        <figcaption>Sovereing of the seas</figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <figure>
-                        <img src="" alt="">
+                        <img src="assets/projects/san idelfonso/IMG_2821.jpeg" alt="Imagen del San Idelfonso">
                         <figcaption>San Idelfonso</figcaption>
                     </figure>
                 </a>
             </li>
-            <li>
+            <li class="projects__item">
                 <a href="">
                     <figure>
-                        <img src="" alt="">
+                        <img id="mistral" src="assets/projects/mistral/IMG_2875.jpeg" alt="Imagen de la goleta Mistral">
+                        <figcaption>Goleta Mistral</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="projects__item">
+                <a href="">
+                    <figure>
+                        <img src="assets/projects/secciónSoleil/IMG_2848.jpeg" alt="Imagen de sección del Soleil Royal">
+                        <figcaption>Sección del Soleil Royal</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="projects__item">
+                <a href="">
+                    <figure>
+                        <img src="assets/projects/sovereing/IMG_2839.jpeg" alt="Imagen del Sovereing of the seas">
+                        <figcaption>Sovereing of the seas</figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="projects__item">
+                <a href="">
+                    <figure>
+                        <img src="assets/projects/san martin/IMG_2840.jpeg" alt="Imagen del San Martin">
                         <figcaption>San Martín</figcaption>
                     </figure>
                 </a>
             </li>
         </ul>
-    </section>
+    </main>
 </body>
 </html>
